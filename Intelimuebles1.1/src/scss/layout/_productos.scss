@@ -1,0 +1,51 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'descripcion' as d;
+
+.titulo {
+    text-align: center;
+    color: v.$cfondo;
+    margin: 7rem 0 7rem 0;
+}
+
+.contenedor-productos {
+    @include m.contenedor;
+    @include m.grid(2, 2rem);
+    color: v.$cnegro;
+}
+
+.producto {
+    h3 {
+        color: v.$cbordes;
+        font-size: 4rem;
+        margin: 2rem 0 1rem 0;
+    }
+}
+
+.producto_descripcion {
+    color: v.$cnegro;
+    font-size: 2rem;
+}
+
+.producto_precio{
+    color: v.$crojo;
+}
+
+.toast {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: v.$cfondo;
+    color: v.$cblanco;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    border-left: 5px solid v.$cazul;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: translateY(150%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+
+    &.mostrar {
+        transform: translateY(0);
+    }
+}

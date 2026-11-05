@@ -1,0 +1,103 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.login{
+    background-color: v.$cfondo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.panel{
+    width: 30rem;
+    background-color: v.$cblanco;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+
+
+    h2{
+        font-size: 3.5rem;
+        color:v.$cnegro;
+        margin-bottom: 3.3rem;
+    }
+
+    .campo{
+        display:flex;
+        justify-content: left;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    label{
+        font-size: 1.5rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: v.$cnegro;
+    }
+
+    input{
+        padding: .7rem;
+        font-size: 1.5rem;
+        border: 1px solid v.$cbordes;
+        border-radius: .5rem;
+        outline: none;
+    }
+}
+
+.panel-login{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+}
+
+.area-boton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.boton-login{
+    background-color: v.$cfondo;
+    color: v.$cblanco;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1.3rem;
+    border-radius: 1rem;
+    border: none;
+    &:hover {
+        background-color: v.$cazul;
+        cursor: pointer;
+    }
+
+    &:active {
+        transform: scale(0.98); /* Pequeño efecto al hacer clic */
+    }
+}
+
+.registrar-area{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.registrar{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: v.$cnegro;
+
+    a{
+        color: v.$cazul;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

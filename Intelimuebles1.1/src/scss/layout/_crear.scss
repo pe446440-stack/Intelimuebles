@@ -1,0 +1,128 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor-crear {
+    @include m.contenedor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+}
+
+.panel-crear {
+    width: 95%;
+    background-color: v.$cfondo;
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+
+    @include m.tablet {
+        width: 80%;
+    }
+
+    @include m.laptop {
+        width: 70%;
+    }
+}
+
+// Nueva clase específica para el formulario usando Grid
+.formulario-crear {
+    display: grid;
+    grid-template-columns: 1fr; // 1 columna en móviles
+    gap: 1.5rem; // Espacio uniforme entre todos los campos
+
+    @include m.tablet {
+        grid-template-columns: repeat(2, 1fr); // 2 columnas en tablet/laptop
+        column-gap: 2rem; // Más espacio horizontal entre las dos columnas
+    }
+
+    .campo {
+        display: flex;
+        flex-direction: column;
+        // Eliminamos el margin-bottom porque el 'gap' del grid ya hace ese trabajo
+    }
+
+    label {
+        font-size: 1.5rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: v.$cblanco;
+    }
+
+    input {
+        padding: .7rem;
+        font-size: 1.5rem;
+        border: 1px solid v.$cbordes;
+        border-radius: .5rem;
+        outline: none;
+        width: 100%; // Asegura que el input llene su columna
+    }
+
+    // Hacemos que el botón y el enlace final abarquen ambas columnas en pantallas grandes
+    .area-boton, 
+    .registrar-area {
+        @include m.tablet {
+            grid-column: 1 / 3; 
+        }
+    }
+}
+
+.crear-registrar {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: v.$cblanco;
+
+    a {
+        color: v.$cazul;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.boton-crear {
+    background-color: v.$cblanco;
+    color: v.$cfondo;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1.3rem;
+    border-radius: 1rem;
+    border: none;
+    transition: background-color 0.3s ease; // Transición suave
+
+    &:hover {
+        background-color: v.$cazul;
+        cursor: pointer;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+.alerta_exito{
+    background-color: #ccffcc;
+    color: #006600; 
+    padding: 1rem; 
+    border-radius: 0.5rem; 
+    margin-bottom: 1rem; 
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 1.3rem;
+}
+
+.alerta_error{
+    background-color: #ffcccc; 
+    color: #cc0000; 
+    padding: 1rem; 
+    border-radius: 0.5rem; 
+    margin-bottom: 1rem; 
+    text-align: center; 
+    font-weight: bold;
+    font-size: 1.3rem;
+}

@@ -1,0 +1,47 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer {
+    background-color: v.$cfondo;
+    width: 100%;
+    margin: 0;
+    padding: 3rem 1rem;
+    
+    /* Configuración móvil (por defecto) */
+    display: flex;
+    flex-direction: column; /* Apila texto e imagen en móviles */
+    align-items: center;
+    gap: 1.5rem; /* Reemplaza los márgenes manuales, crea espacio entre los elementos */
+
+    @include m.tablet {
+        flex-direction: row; /* Coloca todo en una línea en pantallas más grandes */
+        justify-content: space-between;
+        padding-bottom: 3rem;
+        gap: 2rem; /* Separación horizontal entre textos y logo */
+    }
+
+    .texto_footer {
+        color: v.$cblanco;
+        font-size: 2rem;
+        margin:0; /* Quitamos el margin-top de 4.4rem para que el texto y la imagen se centren perfectamente */
+        text-align: center;
+    }
+    
+    /* Ocultamos el separador "|" en móviles porque se ve extraño apilado */
+    .separador {
+        display: none;
+        
+        @include m.tablet {
+            display: block;
+        }
+    }
+
+    /* Estilos específicos para la imagen */
+    .logo_footer {
+        width: 8rem; /* Ajusta el ancho según el tamaño real de tu logo */
+        height: auto; /* Mantiene la proporción de la imagen */
+        border-radius: 0.5rem; /* Opcional: bordes ligeramente redondeados */
+        object-fit: contain; /* Asegura que la imagen no se deforme */
+        margin:0;
+    }
+}

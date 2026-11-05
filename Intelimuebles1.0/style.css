@@ -1,0 +1,346 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.desktop {
+  position: relative;
+  width: 100%;
+  height: 124.7rem;
+  background-color: #f3f6f8;
+  overflow-x: hidden;
+}
+
+.desktop .rectangle {
+  position: absolute;
+  top: 48rem;
+  left: 36.4rem;
+  width: 96.2rem;
+  height: 361px;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: #c0c0c0;
+}
+
+.desktop .div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28.0rem;
+  height: 124.7rem;
+  background-color: #e6e6e6;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  top: 488px;
+  left: 85px;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-2 {
+  position: absolute;
+  top: 547px;
+  left: 85px;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-3 {
+  position: absolute;
+  top: 370px;
+  left: 85px;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-4 {
+  position: absolute;
+  top: 429px;
+  left: 85px;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-5 {
+  position: absolute;
+  top: 311px;
+  left: 85px;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-6 {
+  position: absolute;
+  top: 21px;
+  left: 85px;
+  width: 161px;
+  font-family: "Encode Sans Semi Condensed-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .rectangle-2 {
+  position: absolute;
+  top: -1px;
+  left: 28rem;
+  width: 100%;
+  height: 82px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #cecece;
+}
+
+.desktop .text-wrapper-7 {
+  position: absolute;
+  top: 23px;
+  left: 34.9rem;
+  opacity: 0.4;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #4a4a4a;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-8 {
+  position: absolute;
+  top: 27px;
+  left: 150rem;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #4a4a4a;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.desktop .text-wrapper-9 {
+  position: absolute;
+  top: 28px;
+  left: 170rem;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #4a4a4a;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.desktop .line {
+  position: absolute;
+  top: 23px;
+  left: 1214px;
+  width: 1px;
+  height: 33px;
+  object-fit: cover;
+}
+
+.desktop .text-wrapper-10 {
+  position: absolute;
+  top: 127px;
+  left: 364px;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.desktop .rectangle-3 {
+  position: absolute;
+  top: 217px;
+  left: 364px;
+  width: 272px;
+  height: 206px;
+  background-color: #aee59a;
+  border-radius: 20px;
+}
+
+.desktop .rectangle-4 {
+  position: absolute;
+  top: 217px;
+  left: 70rem;
+  width: 272px;
+  height: 206px;
+  background-color: #9bc7e7;
+  border-radius: 20px;
+}
+
+.desktop .text-wrapper-11 {
+  position: absolute;
+  top: 302px;
+  left: 73.7rem;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .rectangle-5 {
+  position: absolute;
+  top: 217px;
+  left: 104rem;
+  width: 272px;
+  height: 206px;
+  background-color: #e0ba81;
+  border-radius: 20px;
+}
+
+.desktop .rectangle-6 {
+  position: absolute;
+  top: 60rem;
+  left: 136rem;
+  width: 442px;
+  height: 35rem;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: #c0c0c0;
+}
+
+.desktop .text-wrapper-12 {
+  position: absolute;
+  top: 36.3rem;
+  left: 146rem;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .rectangle-7 {
+  position: absolute;
+  top: 21.4rem;
+  left: 136rem;
+  width: 442px;
+  height: 35rem;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: #c0c0c0;
+}
+
+.desktop .text-wrapper-13 {
+  position: absolute;
+  top: 134px;
+  left: 85px;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-14 {
+  position: absolute;
+  top: 193px;
+  left: 85px;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-15 {
+  position: absolute;
+  top: 252px;
+  left: 85px;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-16 {
+  position: absolute;
+  top: 302px;
+  left: 463px;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-17 {
+  position: absolute;
+  top: 305px;
+  left: 114.3rem;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-18 {
+  position: absolute;
+  top: 65rem;
+  left: 74rem;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-19 {
+  position: absolute;
+  top: 75rem;
+  left: 147.5rem;
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
